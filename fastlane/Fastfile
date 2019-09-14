@@ -1,0 +1,35 @@
+lane :test1 do
+  git_add_tag(
+    workspace: '/Users/xiongzenghui/Desktop/haha',
+    tag_name: '1.0.2',
+    prefix: 'v',
+    tag_message: "我是提交信息"
+  )
+end
+
+lane :test2 do
+  git_add_tag(
+    workspace: '/Users/xiongzenghui/Desktop/haha',
+    prefix: 'v',
+    tag_message: "我是提交信息"
+  )
+end
+
+lane :test3 do
+  git_add_tag(
+    workspace: '/Users/xiongzenghui/Desktop/haha',
+    prefix: 'v',
+    tag_message: "我是提交信息",
+    commit: '404adcc'
+  )
+end
+
+
+lane :test4 do
+  git_add_tag(
+    workspace: '/Users/xiongzenghui/Desktop/haha',
+    prefix: 'v',
+    tag_message: "我是提交信息",
+    branch: 'master'
+  )
+end
