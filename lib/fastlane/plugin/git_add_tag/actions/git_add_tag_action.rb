@@ -114,7 +114,7 @@ module Fastlane
           FastlaneCore::ConfigItem.new(
             key: :prefix,
             description: "tag name prefix, like: master_1.2.3 , v1.0.0",
-            optional: false
+            optional: true
           ),
           FastlaneCore::ConfigItem.new(
             key: :tag_name,

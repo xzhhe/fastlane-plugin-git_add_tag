@@ -33,3 +33,12 @@ lane :test4 do
     branch: 'master'
   )
 end
+
+lane :test5 do
+  git_add_tag(
+    workspace: '/Users/xiongzenghui/Desktop/workspace/xxx',
+    tag_message: "我是提交信息",
+    branch: 'athena',
+    tag_name: '2.0.0'
+  )
+end
